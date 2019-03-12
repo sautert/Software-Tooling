@@ -21,3 +21,8 @@ In this project, there will be :
 - A licence
 - A .gitignore file
 - A Fish shell configuration
+
+## About the mattermost deployment ##
+
+Go the the <strong>./mattermost</strong> directory, a README.md is there to
+give you some informations about the mattermost docker deployment
