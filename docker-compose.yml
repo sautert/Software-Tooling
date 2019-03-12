@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  mattermost:
+    build: ./mattermost
+    restart: always
+    volumes:
+      - ./mattermost/data/mysql:/var/lib/mysql
+    ports:
+      - 8065:8065
+      - 9200:9200
+    environment:
+      - MYSQL_ROOT_PASSWORD=mostest
+      - MYSQL_USER=mmuser
+      - MYSQL_PASSWORD=mostest
