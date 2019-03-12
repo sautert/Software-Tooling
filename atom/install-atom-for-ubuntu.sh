@@ -14,7 +14,7 @@ then
 fi
 
 # Atom installation
-sudo apt-get install atom
+sudo apt-get -y install atom
 
 # Package install
 sudo apm install autocomplete
