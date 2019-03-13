@@ -14,7 +14,7 @@ then
 fi
 
 # Atom installation
-sudo pacman -S --noconfirm atom
+sudo yaourt -S atom
 
 # Package install
 sudo apm install autocomplete
