@@ -7,3 +7,6 @@ mattermost/data/mysql
 
 # Alpine
 hello-world/alpine
+
+# Portainer
+portainer/data
