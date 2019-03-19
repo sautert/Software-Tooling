@@ -27,5 +27,16 @@ In this project, there will be :
 Go the the <strong>./mattermost</strong> directory, a README.md is there to
 give you some informations about the mattermost docker deployment
 
+## The portainer interface ##
+
+The portainer interface is used to manage all docker containers.<br/>
+It allows to start stop some of them and connect quickly to one single machine.
+
+##### Access #####
+You can connect to the portainer container by calling the url :
+```
+localhost:9000
+```
+
 #### Under WTFPL Licence ####
 ![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)

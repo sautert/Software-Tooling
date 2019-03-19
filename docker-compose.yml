@@ -24,3 +24,16 @@ services:
     build: ./java
     restart: always
     command: java fr.upem.hello.HelloWorld
+
+  portainer:
+    build: ./portainer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer/data:/data
+    ports:
+      - 9000:9000
+    command: --admin-password $$2y$$05$$gSS80HP4M2EQ3lhw9O3.ruqn7NMzkFltUy9U1me4cfBJk4GCc23lm
+    depends_on:
+      - mattermost
+      - alpine
+      - say-hello
