@@ -19,3 +19,8 @@ services:
     restart: always
     ports:
       - 80:80
+
+  say-hello:
+    build: ./java
+    restart: always
+    command: java fr.upem.hello.HelloWorld
