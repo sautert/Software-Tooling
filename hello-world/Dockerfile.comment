@@ -1,0 +1,26 @@
+FROM alpine:3.4
+
+# NGinx and php5 installation
+RUN apk --update add nginx php5-fpm && \
+    mkdir -p /run/nginx
+
+# Copy the server files into the docker image
+ADD www /www
+
+# Nginx configuration
+ADD nginx.conf /etc/nginx/
+
+# Php5 configuration
+ADD php-fpm.conf /etc/php5/php-fpm.conf
+
+# Script to run the server
+ADD run.sh /run.sh
+
+# PORT configuration for nginx
+ENV LISTEN_PORT=80
+
+# Binds the port 80 to the host machine
+EXPOSE 80
+
+# First command for the image instanciation
+CMD /run.sh

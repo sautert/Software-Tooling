@@ -1,2 +1,9 @@
 # Ignore logs
 *.log
+
+# Mattermost volume data
+mattermost/data/config/config.json
+mattermost/data/mysql
+
+# Alpine
+hello-world/alpine
