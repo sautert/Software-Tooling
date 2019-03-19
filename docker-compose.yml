@@ -13,3 +13,9 @@ services:
       - MYSQL_ROOT_PASSWORD=mostest
       - MYSQL_USER=mmuser
       - MYSQL_PASSWORD=mostest
+
+  alpine:
+    build: ./hello-world/alpine
+    restart: always
+    ports:
+      - 80:80
