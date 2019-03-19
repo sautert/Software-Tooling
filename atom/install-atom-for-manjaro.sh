@@ -24,3 +24,6 @@ sudo apm install file-icons
 sudo apm install linter
 sudo apm install linter-eslint
 sudo apm install platformio-ide-terminal
+sudo apm install language-nginx
+sudo apm install language-docker
+sudo apm install activate-power-mode
