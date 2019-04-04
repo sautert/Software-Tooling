@@ -14,12 +14,6 @@ services:
       - MYSQL_USER=mmuser
       - MYSQL_PASSWORD=mostest
 
-  alpine:
-    build: ./hello-world/alpine
-    restart: always
-    ports:
-      - 80:80
-
   say-hello:
     build: ./java
     restart: always
@@ -35,5 +29,4 @@ services:
     command: --admin-password $$2y$$05$$gSS80HP4M2EQ3lhw9O3.ruqn7NMzkFltUy9U1me4cfBJk4GCc23lm
     depends_on:
       - mattermost
-      - alpine
       - say-hello
